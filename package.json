@@ -1,0 +1,35 @@
+{
+  "name": "@cfam/bfb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite src --mode development --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "publish": "gh-pages -d dist",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanya-deep/bfb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaitanya-deep/bfb/issues"
+  },
+  "homepage": "https://github.com/chaitanya-deep/bfb#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "prettier": "2.7.1",
+    "sass": "^1.53.0",
+    "vite": "^2.9.12",
+    "vite-plugin-pwa": "^0.12.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
