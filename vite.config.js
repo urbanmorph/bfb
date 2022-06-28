@@ -1,12 +1,13 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
-import { VitePWA } from "vite-plugin-pwa";
+// import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [VitePWA()],
+  plugins: [
+    // VitePWA()
+  ],
   root: "src",
-  // base: "/bfb",
   build: {
     outDir: "../dist",
     emptyOutDir: true,
