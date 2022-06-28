@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="manifest" href="/assets/site.webmanifest" crossorigin="use-credentials">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Bicycle Friendly Business | CFAM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.scss" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"
+  />
+</head>
+<body>
+
+<header id="header">
+  <div class="padding-lr width-limit flex">
+    <img src="/assets/bfb_logo.svg" alt="Bicycle friendly business logo" id="header-logo" />
+    <nav id="header-nav">
+      <a href="/" class="nav-item">About</a>
+      <a href="/map/" class="nav-item active">Map</a>
+    </nav>
+  </div>
+</header>
+
+<div id="map">
+
+</div>
+<script type="module">
+  const businesses_data = [
+    {
+      name: "Ram medicals",
+      location: [12.912699700286302, 77.65199760796814],
+      image: "/assets/businesses/hsr_ram_medicals_thumbnail.jpg",
+    },
+    {
+      name: "Ciciana",
+      location: [12.913946913099561, 77.65170339858358],
+      image: "/assets/businesses/hsr_ciciana_thumbnail.jpg",
+    },
+  ]
+
+  const mapInstance = L.map("map", {
+    center: [12.913781, 77.651340],
+    crs: L.CRS.EPSG3857,
+    zoom: 17,
+    zoomControl: true,
+    preferCanvas: false,
+  });
+  // Add map layer to show the wards and bus stops on
+  var tileLayer = L.tileLayer(
+    // "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "https://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+    {
+      attribution:
+              'Data by \u0026copy; \u003ca href="http://openstreetmap.org"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href="http://www.openstreetmap.org/copyright"\u003eODbL\u003c/a\u003e.',
+      detectRetina: false,
+      maxNativeZoom: 18,
+      maxZoom: 18,
+      minZoom: 0,
+      noWrap: false,
+      opacity: 1,
+      subdomains: "abc",
+      tms: false,
+    }
+  ).addTo(mapInstance);
+
+  const redIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+  businesses_data.forEach(b => {
+    const marker = L.marker(b.location, {icon: redIcon});
+    marker.bindTooltip(
+      `<div class="map-marker-tooltip">
+         <h4>${b.name}</h4>
+         <img src="${b.image}" alt="" />
+       </div>`,
+      { sticky: true }
+    );
+    marker.addTo(mapInstance);
+  });
+</script>
+</body>
+</html>

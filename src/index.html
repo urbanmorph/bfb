@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="manifest" href="/assets/site.webmanifest" crossorigin="use-credentials">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
   <title>Bicycle Friendly Business | CFAM</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.scss" />
+  <link rel="stylesheet" href="./css/styles.scss" />
 </head>
 <body>
 
@@ -15,14 +20,14 @@
     <img src="/assets/bfb_logo.svg" alt="Bicycle friendly business logo" id="header-logo" />
     <nav id="header-nav">
       <a href="/" class="nav-item active">About</a>
-<!--      <a href="/map" class="nav-item">Map</a>-->
+      <a href="/map/" class="nav-item">Map</a>
     </nav>
   </div>
 </header>
 
 <div id="banner">
   <div class="width-limit padding-lr">
-    <img alt="CFAM" src="/assets/cfam_logo.svg" />
+    <img alt="CFAM" src="/assets/cfam_logo.svg" id="banner-cfam" />
     <h1>Bicycle Friendly Business</h1>
   </div>
 </div>
@@ -30,24 +35,30 @@
 <div id="about" class="main-section width-limit padding-lr">
   <h2>About BFB</h2>
   <p>
-    Bicycle Friendly business(BFB) is an initiative by the <a href="https://cfam.in" target="_blank" rel="noopener">Council for Active Mobility(CFAM)</a> to create safe bicycle infrastructure in Bengaluru with the support of local businesses.
-    <br />
-    <br />
-    We encourage businesses to welcome and prioritise cyclists. Our mission is to make our city congestion free, safer, calmer, and more liveable.
+    Bicycle Friendly Business (BFB) is an initiative by <a href="https://cfam.in" target="_blank" rel="noopener">Council for Active Mobility(CFAM)</a> to enable businesses to participate in making the city liveable and climate resilient by encouraging active travel modes like cycling.
   </p>
 </div>
 
-<!--<div class="main-section width-limit padding-lr">-->
-<!--  <h2>Participating businesses</h2>-->
-<!--  <p>-->
-
-<!--  </p>-->
-<!--</div>-->
+<div class="main-section width-limit padding-lr">
+  <h2>Participating businesses</h2>
+  <div class="flex flex-wrap">
+    <div class="pb-item">
+      <img src="/assets/businesses/hsr_ram_medicals_thumbnail.jpg" alt="" />
+      <p class="pb-item-name">Ram medicals, HSR</p>
+    </div>
+    <div class="pb-item">
+      <img src="/assets/businesses/hsr_ciciana_thumbnail.jpg" alt="" />
+      <p class="pb-item-name">Ciciana, HSR</p>
+    </div>
+  </div>
+</div>
 
 <div class="main-section width-limit padding-lr">
   <h2>For businesses</h2>
   <p>
-    If you'd like to participate in the program and help in our mission, please <a href="https://twitter.com/cfam_india" target="_blank" rel="noopener">reach out to us</a> and we shall get back to you at the earliest.
+    If you would like to be associated as a green business that support active travel we will list you on our site/promote you on social media in return for your commitment to welcoming customers on active travel modes like cycling, providing them with facilities like safe parking and other discounts.
+    <br />
+    If interested, please <a href="https://twitter.com/cfam_india" target="_blank" rel="noopener">reach out to us</a> and we shall get back to you at the earliest.
   </p>
 </div>
 
@@ -55,9 +66,29 @@
 <div class="main-section width-limit padding-lr">
   <h2>For individuals</h2>
   <p>
-    We are a volunteer group of active cyclists. We're always looking for motivated individuals to join our cause. If you'd like to volunteer, the best way is to <a href="https://discord.gg/mxMC9v6k7g" target="_blank" rel="noopener">join the conversation on our Discord server</a>.
+    We are a volunteer group of enthusiasts who run various campaigns the make the more active travel friendly. We're always looking for motivated individuals to join our cause. If you'd like to volunteer, the best way is to <a href="https://discord.gg/mxMC9v6k7g" target="_blank" rel="noopener">join the conversation on our Discord server</a>.
   </p>
 </div>
+
+<footer id="footer">
+  <div class="width-limit padding-lr" id="footer-contents">
+    <a class="footer-link" href="https://cfam.in" target="_blank" rel="noopener">
+      <img alt="" src="/assets/cfam_logo.svg" />
+      Bicycle Friendly Business is an initiative by CFAM
+    </a>
+    <a class="footer-link" href="https://discord.gg/mxMC9v6k7g" target="_blank" rel="noopener">
+      <img alt="" src="/assets/icon_discord.png" />
+      Join the community
+    </a>
+    <a class="footer-link" href="https://twitter.com/cfam_india" target="_blank" rel="noopener">
+      <img alt="" src="/assets/icon_twitter.png" />
+      Stay in the loop
+    </a>
+    <p id="footer-copyright">
+      &copy; Council for Active Mobility 2022. All Rights Reserved.
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>

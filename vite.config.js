@@ -14,6 +14,7 @@ export default defineConfig({
       external: resolve(__dirname, "src"),
       input: {
         main: resolve(__dirname, "src/index.html"),
+        map: resolve(__dirname, "src/map/index.html"),
       },
     },
   },
