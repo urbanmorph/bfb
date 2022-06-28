@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.98e1d147.ico">
+  <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiIiLAogICAgInNob3J0X25hbWUiOiIiLAogICAgImljb25zIjpbCiAgICAgICAgeyJzcmMiOiIvYXNzZXRzL2ljb25zL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwic2l6ZXMiOiIxOTJ4MTkyIiwidHlwZSI6ImltYWdlL3BuZyJ9LAogICAgICAgIHsic3JjIjoiL2Fzc2V0cy9pY29ucy8vYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiIjZmZmZmZmIiwKICAgICJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsCiAgICAiZGlzcGxheSI6InN0YW5kYWxvbmUiCn0=" crossorigin="use-credentials">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
   <title>Bicycle Friendly Business | CFAM</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="/assets/main.e97d9c42.css">
+  <link rel="stylesheet" href="/assets/styles.c75614aa.css">
 <link rel="manifest" href="/manifest.webmanifest"></head>
 <body>
 
@@ -16,14 +21,14 @@
     <img src="/assets/bfb_logo.33d90e59.svg" alt="Bicycle friendly business logo" id="header-logo" />
     <nav id="header-nav">
       <a href="/" class="nav-item active">About</a>
-<!--      <a href="/map" class="nav-item">Map</a>-->
+      <a href="/map/" class="nav-item">Map</a>
     </nav>
   </div>
 </header>
 
 <div id="banner">
   <div class="width-limit padding-lr">
-    <img alt="CFAM" src="/assets/cfam_logo.cacb81ad.svg" />
+    <img alt="CFAM" src="/assets/cfam_logo.cacb81ad.svg" id="banner-cfam" />
     <h1>Bicycle Friendly Business</h1>
   </div>
 </div>
@@ -31,24 +36,30 @@
 <div id="about" class="main-section width-limit padding-lr">
   <h2>About BFB</h2>
   <p>
-    Bicycle Friendly business(BFB) is an initiative by the <a href="https://cfam.in" target="_blank" rel="noopener">Council for Active Mobility(CFAM)</a> to create safe bicycle infrastructure in Bengaluru with the support of local businesses.
-    <br />
-    <br />
-    We encourage businesses to welcome and prioritise cyclists. Our mission is to make our city congestion free, safer, calmer, and more liveable.
+    Bicycle Friendly Business (BFB) is an initiative by <a href="https://cfam.in" target="_blank" rel="noopener">Council for Active Mobility(CFAM)</a> to enable businesses to participate in making the city liveable and climate resilient by encouraging active travel modes like cycling.
   </p>
 </div>
 
-<!--<div class="main-section width-limit padding-lr">-->
-<!--  <h2>Participating businesses</h2>-->
-<!--  <p>-->
-
-<!--  </p>-->
-<!--</div>-->
+<div class="main-section width-limit padding-lr">
+  <h2>Participating businesses</h2>
+  <div class="flex flex-wrap">
+    <div class="pb-item">
+      <img src="/assets/hsr_ram_medicals_thumbnail.60320259.jpg" alt="" />
+      <p class="pb-item-name">Ram medicals, HSR</p>
+    </div>
+    <div class="pb-item">
+      <img src="/assets/hsr_ciciana_thumbnail.7a303382.jpg" alt="" />
+      <p class="pb-item-name">Ciciana, HSR</p>
+    </div>
+  </div>
+</div>
 
 <div class="main-section width-limit padding-lr">
   <h2>For businesses</h2>
   <p>
-    If you'd like to participate in the program and help in our mission, please <a href="https://twitter.com/cfam_india" target="_blank" rel="noopener">reach out to us</a> and we shall get back to you at the earliest.
+    If you would like to be associated as a green business that support active travel we will list you on our site/promote you on social media in return for your commitment to welcoming customers on active travel modes like cycling, providing them with facilities like safe parking and other discounts.
+    <br />
+    If interested, please <a href="https://twitter.com/cfam_india" target="_blank" rel="noopener">reach out to us</a> and we shall get back to you at the earliest.
   </p>
 </div>
 
@@ -56,9 +67,29 @@
 <div class="main-section width-limit padding-lr">
   <h2>For individuals</h2>
   <p>
-    We are a volunteer group of active cyclists. We're always looking for motivated individuals to join our cause. If you'd like to volunteer, the best way is to <a href="https://discord.gg/mxMC9v6k7g" target="_blank" rel="noopener">join the conversation on our Discord server</a>.
+    We are a volunteer group of enthusiasts who run various campaigns the make the more active travel friendly. We're always looking for motivated individuals to join our cause. If you'd like to volunteer, the best way is to <a href="https://discord.gg/mxMC9v6k7g" target="_blank" rel="noopener">join the conversation on our Discord server</a>.
   </p>
 </div>
+
+<footer id="footer">
+  <div class="width-limit padding-lr" id="footer-contents">
+    <a class="footer-link" href="https://cfam.in" target="_blank" rel="noopener">
+      <img alt="" src="/assets/cfam_logo.cacb81ad.svg" />
+      Bicycle Friendly Business is an initiative by CFAM
+    </a>
+    <a class="footer-link" href="https://discord.gg/mxMC9v6k7g" target="_blank" rel="noopener">
+      <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAABHNCSVQICAgIfAhkiAAAA7dJREFUaEPtmk1oE0EUx+dtWpPSIiIqgqD2IHgRQT2I0CYVWg+CopAemkQqeJAmIvXguSfBi18krQiCNClVgoLiobXYJEW8qeBVwYJerPRQFGqbdMe3wW03u7Odnd1N88HmErIz8+b93v/tzNvZAGF8wsNTO/2rgUVWW71dy6RCwPLJcDEaz9N6c57nDwCQdDJYwVLxoxGhVGg9XNOAKYDatFwHiyUKFD881eu6HcCHKdlVZloHa+Q01EZbVc0Dq+sc1DjnKdYoSql+eop5itVJBFxPRdza5ydSoU6FD/fEF/h1gc8KWC1s1HjRROE1ofQsf5x5D9fAgNKu9GjPu3CY+vx7CqX/u/71dCr0gOfg4GAuUOrwLREqb8O+f9GpNmVMLDbdTrf7//DGs9pdAVONxBJzNJ3sZj4+iDgXi+dvofIX0e7hMiDapVQWMbFeL9quPBSo8PD7tuzdU8tCMwt2Fi31HCkGIGGx6VwhK4yReG4KCJyx0lfp4wjM7KnV6uSi/URU88AM0ZXl85mx069Eo+60v1XVbCu21WmoBqRpwawu/XYV+4gDj2+WVhWRxdOjjO70SB2rP4rgZUJ5M28H7tZiC4w3OStdJFk6Oj7W/VkbjEhi5gjQ1opr2qXaLHBW0nHLwFgOmzloJ3D6IGwZGGszN7tf6hnsJUbwnDaKZs4aVAMymUmGBjj3r1IYt2/Wx45iFAdJvP3o8rW53UVZXrBSdqnKrbUE9k7eP/mTZ3tgqBCRgGbcBltEsF28yavZPjKSa/n6C4quguHZ+GM8+L+iNxpNzK1kkt1+N4EwTb9gEA+xbPJWRvFUBCjgnhRiTRaJ57/h88/Bllba+eRez7xdSMXpEoX9T0eD31k2Ll19u0/2+X64qphibGVhwZ/N9q9a3GfyGL0eHmQ0kZ8mlPRRAh8mUsETm9juxbY3PHviim1YnMHBfZzVS+jthhvLvOqPE7CyjZVicUf2Ue+S4Z6z+eKQBYep+Rvtd/BU0rY7BqucDPBgQn6OL2/CIk5Uo6/LYNVw0Z5ND8xe3Go3ylOsdrG3N7OnmL241W6UUbGh3DIBCNTOJePMMiU3JCB3RHwygCmDeZWzyARu9FWdFPHLDGweHTrghlNu2JDW4Nj4w+AnkaAzwRQD+CpnFitYblXuhuNWbGhrSCvKmYKpk0Xjs/2ESM+sTF7NPvrimAfHBaums05tI5zy5tTHstPQYApQZCh/Ew+ab+vhGh5s45ap/ONo04DpV8ymAtPCNR2YCqeC/QNjK/tGSu6L+gAAAABJRU5ErkJggg==" />
+      Join the community
+    </a>
+    <a class="footer-link" href="https://twitter.com/cfam_india" target="_blank" rel="noopener">
+      <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAABHNCSVQICAgIfAhkiAAAA21JREFUaEPtmk1oE0EUx9+kaUxrEosHQQ+CCrn5BRXRg6II5mLdWJuCB/VQqAcpInjz0Pbm3YM9iBQP2qYloSj4ASooevTjIPiB4EGwB8UkbappknEmOk2yzZr5SjJZHAgk3Xmz7zf/997uTAeBrUWn0/sAFc9ghA4Bhq3kstfex5DfeUDwCWH8GLBnMhELvaj0C1X+iMZ/XMOAhg1xXMgNBHgiMdBzjhmtgFnTqXtkBo4KjWZaZwz3k7F1EepWCaydlbLPLVMO0ZzCCD83bfJV/EEY7UduUqucX3gCWTOpd6T6hVVmyDhbBO+RFU8tG1zSZecsT8GwrLXJdv/BTFanlm8tV6xIEuHi3i44uLkT5heLMPJgAXIF9WlsGdj2DV4YP9DtSEAT/8RMetX1TQEPXI0Eal6relfkKR7LRYChXX6YfPNTfSrJCImTIe5xogQOE8rkQNmG/q1e41KMOXLp0SJ8/K4WJyJQtZy/8HABPqfITNdpQmB0rNtvf8EU+ci0njUIbhwLypiWbMaeZuHVfL70fbY/BP2zzsoJgzGveMLBTqCiViaHIegrr7Lq3V8ajDptxdOAqlZ0/xZDBaxy5HpQtK8SmIh6BZIWczH+ouE0RTxQ2sCYExapVk4CHg/74OwOv3R+UUNeKG4w+kxJCpTopTyGU8lMFYSHENOEV2nawagzuvLDODAT4LQrxtQaTKRhKqoWTkYpZkIYjj/Lwsuvfx7OPE1Luee5kWofkTDkrorh9R1w5fBaVd+U7BsC1m6Fg1sxNtWtyjX6sksXpCKNK8cqB2wFnGgYCitWCThKVr87ySq40e3Ohxxcfy2+wDVeMRm1pBRrZiienssAXYfJNGHFmlkhZdWSUqxZFVIFSgmMGt+yguD3CiyhOWNKFUoZjPlZIGkw0uuHI1t8nK47dxPdbnAaSSrHag2mo6joUIr5pgymA4g6oxNKOhQDZBvsZp/8/qBdcd1QXGC6FKkVvn1k+65Df+0p3Yo7FHUCDiYy5D8qcg9e3urEDcYGHN7th8g28er3bQnD0N3qnSteJ2X6CYPZb9LdieB8bxfs2egFusVGdfiSKcDlJ1np1yEZELuNMpgOJxoxhqvBXHocwq0HWFx75Mi1h8RK72ltfABzVZn/eyDT3QcxGXU7K+d4dHYFziWHnX8D/fKd1pYPy5wAAAAASUVORK5CYII=" />
+      Stay in the loop
+    </a>
+    <p id="footer-copyright">
+      &copy; Council for Active Mobility 2022. All Rights Reserved.
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
