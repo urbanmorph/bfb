@@ -36,6 +36,11 @@
 <script type="module">
   const businesses_data = [
     {
+      name: "MK Ahmed mart",
+      location: [12.912085964802024, 77.64867049779774],
+      image: "/businesses/hsr_mk_ahmed_thumbnail.jpg",
+    },
+    {
       name: "Ram medicals",
       location: [12.912699700286302, 77.65199760796814],
       image: "/businesses/hsr_ram_medicals_thumbnail.jpg",
@@ -45,12 +50,22 @@
       location: [12.913946913099561, 77.65170339858358],
       image: "/businesses/hsr_ciciana_thumbnail.jpg",
     },
-  ]
+    {
+      name: "Avin sports",
+      location: [12.922450901808812, 77.65131078950675],
+      image: "/businesses/hsr_avin_sports_thumbnail.jpg",
+    },
+    {
+      name: "John Jacobs HSR",
+      location: [12.923476976785192, 77.65150015907754],
+      image: "/businesses/hsr_john_jacobs_thumbnail.jpg",
+    },
+  ];
 
   const mapInstance = L.map("map", {
-    center: [12.913781, 77.651340],
+    center: [12.917245225957542, 77.64709686610244],
     crs: L.CRS.EPSG3857,
-    zoom: 17,
+    zoom: 16,
     zoomControl: true,
     preferCanvas: false,
   });
