@@ -36,6 +36,11 @@
 <script type="module">
   const businesses_data = [
     {
+      name: "Pedal in Tandem",
+      location: [12.972721805954304, 77.64014837067434],
+      capacity: 10,
+    },
+    {
       name: "Abhinandan Cycles - Sultanpet",
       location: [12.967895507498532, 77.57416326250983],
       capacity: 6,
@@ -197,16 +202,22 @@
     }
   ).addTo(mapInstance);
 
-  const redIcon = new L.Icon({
-    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
-  });
   businesses_data.forEach(b => {
-    const marker = L.marker(b.location, {icon: redIcon});
+    const marker = L.marker(
+            b.location,
+            {
+              icon: new L.DivIcon({
+                className: 'marker-item',
+                html: `<img class="marker-icon" src="/marker-icon-2x-red.png"/>
+                <span class="marker-text">${b.capacity || 2}</span>
+                `,
+                iconSize: [25, 41],
+                iconAnchor: [12, 21],
+                popupAnchor: [1, -34],
+              })
+            }
+            // {icon: redIcon}
+    );
     marker.bindTooltip(
       `<div class="map-marker-tooltip">
          <h4>${b.name}</h4>

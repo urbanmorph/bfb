@@ -202,6 +202,26 @@ p {
   }
 }
 
+.marker-item {
+
+}
+
+.marker-icon {
+  width: 25px;
+  height: 41px;
+}
+
+.marker-text {
+  font-weight: bold;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  text-align: center;
+  width: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
 
 @media screen and (max-width: 450px){
   h1 {
